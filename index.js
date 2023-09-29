@@ -10,9 +10,9 @@ import fs from 'fs';
 
   await page.goto('https://www.elgiganten.dk/product/outlet/electrolux-vaskemaskine-ew8f8661u1/399017');
   
-  const cookies = '.coi-banner__accept';
-  await page.waitForSelector(cookies);
-  await page.click(cookies);
+  //const cookies = '.coi-banner__accept';
+  //await page.waitForSelector(cookies);
+  //await page.click(cookies);
 
   const n = await page.$(".attribute-group__wrapper")
   const t = await (await n.getProperty('textContent')).jsonValue()
